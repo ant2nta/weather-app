@@ -5,7 +5,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^11.0.0",
@@ -22,6 +23,7 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.3",
+    "push-dir": "^0.4.1",
     "v-calendar": "^3.0.0-alpha.8"
   }
 }

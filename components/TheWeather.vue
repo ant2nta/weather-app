@@ -4,15 +4,7 @@
 
     <div v-if="cities.selectedCity" class="flex">
       <div v-if="currentWeather" class="weather flex">
-        <img v-if="currentWeather.icon == 'clear-day'" src="../assets/images/clear-day.webp" alt="weather" class="w-16 h-16">
-        <img v-if="currentWeather.icon == 'clear-night'" src="../assets/images/clear-night.webp" alt="weather" class="w-16 h-16">
-        <img v-if="currentWeather.icon == 'cloudy'" src="../assets/images/cloudy.webp" alt="weather" class="w-16 h-16">
-        <img v-if="currentWeather.icon == 'fog'" src="../assets/images/fog.webp" alt="weather" class="w-16 h-16">
-        <img v-if="currentWeather.icon == 'partly-cloudy-day'" src="../assets/images/partly-cloudy-day.webp" alt="weather" class="w-16 h-16">
-        <img v-if="currentWeather.icon == 'partly-cloudy-night'" src="../assets/images/partly-cloudy-night.webp" alt="weather" class="w-16 h-16">
-        <img v-if="currentWeather.icon == 'rain'" src="../assets/images/rain.webp" alt="weather" class="w-16 h-16">
-        <img v-if="currentWeather.icon == 'snow'" src="../assets/images/snow.webp" alt="weather" class="w-16 h-16">
-        <img v-if="currentWeather.icon == 'wind'" src="../assets/images/wind.webp" alt="weather" class="w-16 h-16">
+        <img :src="`../assets/images/${currentWeather.icon}.webp`" alt="weather" class="w-16 h-16">
 
         <div class="flex flex-col gap-2 ml-10">
           <p>{{ `Temperature: ${currentWeather.tempmin}°С - ${currentWeather.tempmax}°С` }}</p>
