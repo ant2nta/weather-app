@@ -2,5 +2,5 @@
 export default defineNuxtConfig({
   src: '~plugins/v-calendar.js',
   ssr: false,
-  modules: ['@pinia/nuxt']
+  modules: ['@pinia/nuxt', '@nuxtjs/tailwindcss']
 })
