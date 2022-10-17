@@ -2,8 +2,5 @@
 export default defineNuxtConfig({
   src: '~plugins/v-calendar.js',
   ssr: false,
-  modules: ['@pinia/nuxt', '@nuxtjs/tailwindcss'],
-  router: {
-    base: 'https://ant2nta.github.io/weather-app/'
-  }
+  modules: ['@pinia/nuxt', '@nuxtjs/tailwindcss']
 })

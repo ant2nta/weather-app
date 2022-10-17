@@ -1,9 +1,5 @@
 <template>
   <div class="main">
-    <h1 class="text-3xl font-bold">
-      Weater app
-    </h1>
-
     <TheWeather />
   </div>
 </template>

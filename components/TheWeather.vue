@@ -4,7 +4,7 @@
 
     <div v-if="cities.selectedCity" class="flex">
       <div v-if="currentWeather" class="weather flex">
-        <img :src="`../assets/images/${currentWeather.icon}.webp`" alt="weather" class="w-16 h-16">
+        <img :src="`/images/${currentWeather.icon}.webp`" alt="weather" class="w-16 h-16">
 
         <div class="flex flex-col gap-2 ml-10">
           <p>{{ `Temperature: ${currentWeather.tempmin}°С - ${currentWeather.tempmax}°С` }}</p>
