@@ -4,6 +4,6 @@ export default defineNuxtConfig({
   ssr: false,
   modules: ['@pinia/nuxt', '@nuxtjs/tailwindcss'],
   router: {
-    base: '/weather-app'
+    base: 'https://ant2nta.github.io/weather-app/'
   }
 })
